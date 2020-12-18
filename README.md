@@ -38,8 +38,10 @@ Para compilar no linux: gcc algevol_basq.c -lglfw -lGL -lGLEW -lm -o algevol_bas
 Para executar: ./alevol_basq.bin<br>
 
 
+
 #### Versão do código
 1.0
+
 
 
 #### Observações
