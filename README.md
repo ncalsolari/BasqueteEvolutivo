@@ -32,16 +32,17 @@ Individuo predado por memória (bola verde)<br>
 <p>Apesar de inicialmente esta predação se mostrar quase inútil, pois no começo não tenho muitos dados na "memória" ele acaba sendo muito eficaz a medida que o algoritmo vai se desenvolvendo, pois cestas em posiçoes semelhantes exigem genes semelhantes nas bolas para se ter o acerto. Foi feito testes usando outras predações, utilizando a predação por síntese (pior indivíduo recebe o valor da média do resto da população) demorou cerca de 2000 gerações para ter 100 cestas validadas, com a predação por memória teve-se uma média de 400 gerações para se ter 100 cestas validadas. Uma otimização de 5x.</p>
 
 
+#### Execução
+Em linux, instalar os pacotes: libglfw3-dev mesa-common-dev libglew-dev<br>
+Para compilar no linux: gcc algevol_basq.c -lglfw -lGL -lGLEW -lm -o algevol_basq.bin<br>
+Para executar: ./alevol_basq.bin<br>
+
+
 #### Versão do código
 1.0
 
+
 #### Observações
-Para rodar:<br>
-Em linux, instalar os pacotes libglfw3-dev mesa-common-dev libglew-dev<br>
-Para compilar no linux: gcc algevol_basq.c -lglfw -lGL -lGLEW -lm -o algevol_basq.bin<br>
-Para executar ./alevol_basq.bin<br>
-
-
 Versões alternativas do código, como por exemplo a versão com predação por síntese, e a versão que salva os valores das cestas em um txt para plotagem do gráfico e análise da evolução do algoritmo estão em no seguinte repósitorio: <br>
 https://github.com/ncalsolari/AlgEvolutivo-SSC0713
 
