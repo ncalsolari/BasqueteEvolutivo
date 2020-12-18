@@ -37,13 +37,11 @@ Em linux, instalar os pacotes: libglfw3-dev mesa-common-dev libglew-dev<br>
 Para compilar no linux: gcc algevol_basq.c -lglfw -lGL -lGLEW -lm -o algevol_basq.bin<br>
 Para executar: ./alevol_basq.bin<br>
 
-
-
+<br>
 #### Versão do código
 1.0
 
-
-
+<br>
 #### Observações
 Versões alternativas do código, como por exemplo a versão com predação por síntese, e a versão que salva os valores das cestas em um txt para plotagem do gráfico e análise da evolução do algoritmo estão em no seguinte repósitorio: <br>
 https://github.com/ncalsolari/AlgEvolutivo-SSC0713
