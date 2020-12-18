@@ -59,7 +59,7 @@ int predacao = 0;
 float tempoteste = 0.00;
 int stop = 0;
 int treinos = 0;
-int ind_memoria;
+int ind_memoria=-1;
 
 // funcao da predacao memoria
 static void pred_memoria(){
@@ -301,7 +301,7 @@ static void nova_geracao(){
 //funcao que faz os procedimentos na populacao e depois poe os novos valores nos individuos
 static void resetapop(){
 
-    printf("NOVA GERACAO\nGeracao %d\nTaxa de mutacao %f\nDistancia do melhor %f\n", count_geracao,percent_mutacao,vetor_melhor_todos[1]);
+    printf("\n\n---NOVA GERACAO---\nGeracao %d\nTaxa de mutacao %f\nDistancia do melhor %f\n", count_geracao,percent_mutacao,vetor_melhor_todos[1]);
     count_geracao ++;      
     tempoteste = 0;
     // pred_sintese();
@@ -368,10 +368,6 @@ static void resetapop(){
 static void key_event(GLFWwindow* window, int key, int scancode, int action, int mods){
    
 
-    if(key==262 && action == GLFW_PRESS) percent_mutacao += 0.01; // tecla para direita
-    if(key==263 && action == GLFW_PRESS) percent_mutacao -= 0.01; // tecla para esquerda
-
-
 }
 
 
@@ -388,7 +384,7 @@ int main(void){
 
  
     // criando uma janela
-    GLFWwindow* window = glfwCreateWindow(700, 700, "Minha Janela", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(700, 700, "Basquete Evolutivo", NULL, NULL);
 
     
     // tornando a janela como principal 
