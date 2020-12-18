@@ -22,7 +22,7 @@ Individuo predado por memória (bola verde)<br>
 
 <p>Quando termina o tempo de vida da populção acontece o crossover, os genes dos individuos (menos do "melhor de todos") são substituídos pela média aritmética entre seus genes e o gene do "melhor de todos" (método Elitismo). Depois cada individuo sofre uma "mutaçao", uma variação de UM dos genes ( a escolha de qual gene será mutado e se positivamente ou negativamente é aleatório), esta variação é inicialmente em uma taxa de 2%. Assim a população é reiniciada, agora com seus novos valores de gene, este processo configura uma geração </p>
 
-<p>Caso passe 4 gerações e o indivíduo "melhor de todos" permaneça o mesmo a taxa de mutação sofre um acréscimo de 2.8% por geração até achar um novo "melhor de todos" (nesse caso ela volta a ser 2%) ou até alcançar 15 gerações sem alterar o melhor de todos. Neste caso a taxa volta a ser 2% e é feito o genocídio, toda a populaçao (com excessão ao "melhor de todos") tem seus genes reiniciados com valores aleatórios.  </p>
+<p>Caso passe 4 gerações e o indivíduo "melhor de todos" permaneça o mesmo a taxa de mutação sofre um acréscimo de 2.8% por geração até achar um novo "melhor de todos" (nesse caso ela volta a ser 2%) ou até alcançar 15 gerações sem alterar o "melhor de todos". Neste caso a taxa volta a ser 2% e é feito o genocídio, toda a populaçao (com excessão ao "melhor de todos") tem seus genes reiniciados com valores aleatórios.  </p>
 
 <p>Se a distância entre o "melhor de todos" e a cesta alcançar um valor mínimo estipulado (no caso pegou-se um valor menor que o raio da bola garantindo assim que a mesma passou pelo meio da cesta) é contabilizado um acerto. Então os dados da posição da cesta e os valores do "melhor de todos" são salvos (no que chamarei de "memória"), a cesta assume uma nova posição e a população é resetada recebendo valores de genes aleatórios, neste caso reseta-se o "melhor de todos" também </p>
 
@@ -36,7 +36,7 @@ Individuo predado por memória (bola verde)<br>
 #### Execução
 Em linux, instalar os pacotes: libglfw3-dev mesa-common-dev libglew-dev<br>
 Para compilar no linux: gcc algevol_basq.c -lglfw -lGL -lGLEW -lm -o algevol_basq.bin<br>
-Para executar: ./alevol_basq.bin<br>
+Para executar: ./algevol_basq.bin<br>
 
 <br>
 
