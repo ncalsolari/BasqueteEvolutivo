@@ -18,7 +18,7 @@ Individuo predado por memória (bola verde)<br>
 <h3>Descrição:</h3>
 <p>Cada indivíduo possui 2 genes, força (varia de 0 à 10) e theta (angulo, varia de 0 à 90). A força se refere a grandeza vetorial, então o movimento da bola no eixo x é descrito pelo cos(theta)*força e em y por sen(theta)*força. Para o movimento é utiliuzado as fórmulas que descrevem o lançamento oblíquo.</p>
 
-<p>A população inicia com todos os indivíduos recebendo valores aleatórios de força e theta. Aqueles individuos que chegarem mais próximos do centro da cesta são taxados como "melhor de todos", os indivíduos só são avaliados enquanto fazem um movimento de "subida" e enquanto não passam por debaixo da cesta (isto evita cestas feitas de baixo pra cima, que é uma jogada não válida no basquete.)</p>
+<p>A população inicia com todos os indivíduos recebendo valores aleatórios de força e theta. Aqueles individuos que chegarem mais próximos do centro da cesta são taxados como "melhor de todos", os indivíduos só são avaliados enquanto fazem um movimento de "descida" e enquanto não passam por debaixo da cesta (isto evita cestas feitas de baixo pra cima, que é uma jogada não válida no basquete.)</p>
 
 <p>Quando termina o tempo de vida da populção acontece o crossover, os genes dos individuos (menos do "melhor de todos") são substituídos pela média aritmética entre seus genes e o gene do "melhor de todos" (método Elitismo). Depois cada individuo sofre uma "mutaçao", uma variação de UM dos genes ( a escolha de qual gene será mutado e se positivamente ou negativamente é aleatório), esta variação é inicialmente em uma taxa de 2%. Assim a população é reiniciada, agora com seus novos valores de gene, este processo configura uma geração </p>
 
