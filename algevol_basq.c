@@ -79,6 +79,7 @@ static void pred_memoria(){
             }
 
         }
+
         
 
     }
@@ -699,7 +700,7 @@ int main(void){
             vetor_cesta_acerto[j]= sqrt(distanciax*distanciax + distanciay*distanciay);
 
             //calcula o mais proximo q a bola chegou da cesta
-            if(vetor_distfinal[j]>vetor_cesta_acerto[j]){
+            if(vetor_cesta_acerto[j]<vetor_distfinal[j] && bolaviva[j] > 0 && subindo[j]<0 ){//&& bolaviva[j] > 0 && subindo[j]<0
                 vetor_distfinal[j]=vetor_cesta_acerto[j];
             }
            
