@@ -4,6 +4,8 @@
 <h3>Nelson Calsolari Neto</h3>
 <p>Prof. Assoc. Eduardo do Valle Simões</p>
 
+<p> link do vídeo explicativo: https://drive.google.com/file/d/1m4TfttqvsnHBVth56Afrgf49N9dayXzK/view?usp=sharing </p>
+
 O código se trata de um algoritmo evolutivo que aprende a arremessar bolas de basquete em cestas que variam de posição.
 Neste algoritmo foi implementado alguns atributos referentes à algoritmos evolutivos os quais serão descritos mais abaixo.
 Temos 4 elementos diferentes:
